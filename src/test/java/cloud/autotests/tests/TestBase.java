@@ -1,5 +1,6 @@
 package cloud.autotests.tests;
 
+import cloud.autotests.tests.demowebshop.TestData;
 import io.qameta.allure.junit5.AllureJunit5;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -10,7 +11,7 @@ import static cloud.autotests.helpers.DriverHelper.*;
 import static com.codeborne.selenide.WebDriverRunner.closeWebDriver;
 
 @ExtendWith({AllureJunit5.class})
-public class TestBase {
+public class TestBase extends TestData {
     @BeforeAll
     static void setUp() {
         configureDriver();

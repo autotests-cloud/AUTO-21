@@ -23,4 +23,6 @@ public class TestData {
     public static String getUserPassword() {
         return getTestData().userPassword();
     }
+
+    public static String issueNumber = "62";
 }
